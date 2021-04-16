@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(130deg, rgba(255,196,0,1) 0%, rgba(45,253,247,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    background: white;
+    min-height: 80vh;
+    width: 65%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+
+.rec1, .rec2 {
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    z-index: 1;
+    border-radius: 10%;
+}
+
+.rec1 {
+    top: 5%;
+    right: 12%;
+}
+
+.rec2 {
+    bottom: 5%;
+    left: 12%;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+}
+
+.user h3 {
+    font-weight: 600;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.link {
+    display: flex;
+    margin: 3rem -2rem 3rem 5rem;
+    padding: 0rem -2rem 0rem -2rem;
+    align-items: center;
+}
+
+.link:hover{
+    color: #489ca7;
+    cursor: pointer;
+}
+
+.link img {
+    margin-right: 1rem;
+}
+
+.link h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.log-out{
+    opacity: 0.8;
+}
+
+.log-out:hover{
+    color: #3e8b7d;
+    cursor: pointer;
+}
+
+.projects {
+    margin: 3rem;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.status {
+    margin-bottom: 1rem;
+}
+
+.status input {
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6));
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.3);
+    justify-content: space-between;
+    height: 18vh;
+}
+
+.progress {
+    background: linear-gradient(to right top, #65dfc9, #6cdfef);
+    width: 100%;
+    height: 0.2rem;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 60%;
+}
+
+.card-info {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 8vh;
+    height: 100%;
+}
+
+.card-info h2 {
+    opacity: 0.8;
+    font-size: larger;
+    margin-bottom: 0.3vh;
+}
+
+.card-info p {
+    margin-bottom: 0.3vh;
+}
+
+.percentage {
+    font-weight: bold;
+    background: linear-gradient(to right top, #3e8b7d, #489ca7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
